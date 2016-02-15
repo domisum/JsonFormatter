@@ -14,13 +14,18 @@ public class JsonFormatter
 	public JsonFormatter(String[] args)
 	{
 		if(args.length != 1)
+		{
+			System.err.println("Invalid arguments: Use the file or directory path of the file(s) to be formatted");
 			return;
+		}
 			
 		File file = new File(args[0]);
 		if(file.isFile())
 			formatFile(file);
 		else if(file.isDirectory())
 			formatDirectory(file);
+		
+		System.out.println("Done");
 	}
 	
 	public static void main(String[] args)
