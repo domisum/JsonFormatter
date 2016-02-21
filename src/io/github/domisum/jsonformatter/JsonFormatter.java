@@ -13,17 +13,23 @@ public class JsonFormatter
 	// -------
 	public JsonFormatter(String[] args)
 	{
-		if(args.length != 1)
+		if(args.length == 0)
 		{
-			System.err.println("Invalid arguments: Use the file or directory path of the file(s) to be formatted");
+			System.err.println("Invalid arguments: Use the file or directory paths of the files to be formatted");
 			return;
 		}
-			
-		File file = new File(args[0]);
-		if(file.isFile())
-			formatFile(file);
-		else if(file.isDirectory())
-			formatDirectory(file);
+		
+		for(String arg : args)
+		{
+			System.out.println("Formatting '" + arg + "' ...");
+			File file = new File(arg);
+			if(file.isFile())
+				formatFile(file);
+			else if(file.isDirectory())
+				formatDirectory(file);
+				
+			System.out.println("Formatting '" + arg + "' done");
+		}
 		
 		System.out.println("Done");
 	}
