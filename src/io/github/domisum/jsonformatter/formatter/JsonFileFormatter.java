@@ -73,6 +73,7 @@ public class JsonFileFormatter
 			
 		// clean up everything
 		json = json.replace("\n", "");
+		json = json.replace("\r", "");
 		
 		boolean quotationOpen = false;
 		for(int i = 0; i < json.length(); i++)

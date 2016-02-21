@@ -28,7 +28,7 @@ public class JsonFormatter
 			else if(file.isDirectory())
 				formatDirectory(file);
 				
-			System.out.println("Formatting '" + arg + "' done");
+			System.out.println("Formatting '" + arg + "' done \n\n\n");
 		}
 		
 		System.out.println("Done");
