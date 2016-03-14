@@ -1,9 +1,9 @@
-package io.github.domisum.jsonformatter;
+package de.domisum.jsonformatter;
 
 import java.io.File;
 
-import io.github.domisum.jsonformatter.file.FileSelector;
-import io.github.domisum.jsonformatter.formatter.JsonFileFormatter;
+import de.domisum.jsonformatter.file.FileSelector;
+import de.domisum.jsonformatter.formatter.JsonFileFormatter;
 
 public class JsonFormatter
 {

@@ -1,4 +1,4 @@
-package io.github.domisum.jsonformatter.formatter;
+package de.domisum.jsonformatter.formatter;
 
 import java.io.File;
 import java.io.FileNotFoundException;

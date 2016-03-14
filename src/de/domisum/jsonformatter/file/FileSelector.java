@@ -1,4 +1,4 @@
-package io.github.domisum.jsonformatter.file;
+package de.domisum.jsonformatter.file;
 
 import java.io.File;
 import java.util.ArrayList;
