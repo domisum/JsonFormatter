@@ -45,7 +45,7 @@ public class FileSelector
 			{
 				if(!file.getAbsolutePath().endsWith(FILE_EXTENSION))
 				{
-					System.out.println("Skipped file '" + "': The file suffix does not fit");
+					System.out.println("Skipped file '" + file.getAbsolutePath() +  "': The file suffix does not fit");
 					continue;
 				}
 				
